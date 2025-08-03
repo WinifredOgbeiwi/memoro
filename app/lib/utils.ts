@@ -4,9 +4,12 @@ export const IMAGES = {
     Auth1 : '/memoro_auth1.png',
       Auth2 : '/memoro_auth2.png',
         Auth3 : '/memoro_auth3.png',
+    Logo : '/memoro_logo.png',
+    Logo_White : '/memoro_logo_white.png',
 }
 
 export const ROUTES = {
+    home: '/',
     dashboard: '/dashboard',
     login: '/login',
     register: '/register',
