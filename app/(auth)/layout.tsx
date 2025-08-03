@@ -46,16 +46,14 @@ export default function AuthLayout({
             {AuthSwiperData.map((slide) => (
               <SwiperSlide key={slide.id}>
                 <div className="h-full flex justify-center items-center">
-
-               
-                <div className="relative flex flex-col justify-center w-full items-center gap-5">
+                <div className="relative flex flex-col justify-center w-full items-center gap-2">
                   <Image
                     src={slide.image}
                     alt="Memoro_AuthImg"
                     width={300}
                     height={300}
                   />
-                  <div className="mt-5 text-[#ffffff] w-full text-center flex flex-col gap-2">
+                  <div className=" text-[#ffffff] w-full text-center flex flex-col gap-2">
                     <h3 className="text-2xl font-bold">{slide.title}</h3>
                     <p>{slide.description}</p>
                   </div>
