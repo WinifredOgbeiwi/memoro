@@ -90,7 +90,7 @@ html[data-theme="dark"] {
     --color-primary7: var(--primary7);
     --color-primary8: var(--primary8);
     --color-primary9: var(--primary9);
-    
+
     --color-grey1: var(--grey1);
     --color-grey2: var(--grey2);
     --color-grey3: var(--grey3);        
@@ -106,3 +106,8 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+     transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
