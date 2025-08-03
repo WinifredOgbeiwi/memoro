@@ -26,7 +26,7 @@ const LoginPage = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center w-full gap-5 h-fit md:h-full text-text-primary">
+    <section className="flex flex-col justify-center w-full  px-5 md:px-16 gap-5 h-fit md:h-full text-text-primary">
       <Link href={ROUTES.home}>
         <Image
           src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}
@@ -77,7 +77,7 @@ const LoginPage = () => {
           onChange={handleChange}
         />
 
-        <Button style="mt-2" type="submit" />
+        <Button style="mt-2" type="submit" text="Login" />
       </form>
       <div className="flex  justify-between items-center text-sm gap-4 xs:flex-row flex-col xs:items-start">
         <p className="text-text-secondary">

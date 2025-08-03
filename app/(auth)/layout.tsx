@@ -15,13 +15,12 @@ export default function AuthLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="h-full  w-full flex flex-col md:flex-row justify-center items-center ">
-      <div className="h-full w-full md:w-1/2 px-5 md:px-16 pt-5 xs:pt-0 bg-background flex flex-col justify-center ">
-        {" "}
+ <main className="min-h-screen w-full flex flex-col md:flex-row">
+      <div className="h-full w-full md:w-1/2 py-5 xs:pt-0 bg-background flex flex-col justify-center ">
         {children}
       </div>
 
-      <div className=" hidden md:flex relative flex-col h-full  justify-center items-center w-1/2 bg-[#3e2687]">
+      <div className=" hidden md:flex relative flex-col min-h-screen w-1/2 bg-[#3e2687]">
         <Image
           src={IMAGES.Auth_bg}
           alt="Memoro_auth_bg"
@@ -45,7 +44,7 @@ export default function AuthLayout({
           >
             {AuthSwiperData.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <div className="h-full flex justify-center items-center">
+                <div className="h-full">
                 <div className="relative flex flex-col justify-center w-full items-center gap-2">
                   <Image
                     src={slide.image}

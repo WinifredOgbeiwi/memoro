@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { InputProps } from "../type";
 
-export const Input = ({ label, name, value, onChange, type }: InputProps) => {
+export const Input = ({ label, name, value, onChange, type, placeholder }: InputProps) => {
   const [isShowPassword, setShowPassword] = useState(false);
 
   return (
     <div className="flex flex-col relative">
-      <label htmlFor={name}>{label}</label>
+      <label htmlFor={name}>{label} <span></span></label>
       <input
         type={type === "password" && isShowPassword ? "text" : type}
         id={name}
@@ -14,7 +14,7 @@ export const Input = ({ label, name, value, onChange, type }: InputProps) => {
         value={value}
         onChange={onChange}
         className="border py-2 px-2  w-full rounded-md focus:outline-none focus:border-primary2 focus:bg-primary8 border-primary6"
-        placeholder={name}
+        placeholder={placeholder}
         required
       />
       {/* {type === "password" && (

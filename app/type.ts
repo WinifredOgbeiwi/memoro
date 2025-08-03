@@ -5,9 +5,11 @@ export type InputProps = {
      onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 
     type:"text" | "password" | "email";
+    placeholder?: string;
 }
 
 export type ButtonProps = {
     style?: string;
     type?: "button" | "submit" | "reset";
+    text: string;
 }
