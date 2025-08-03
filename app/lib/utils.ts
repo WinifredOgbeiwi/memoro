@@ -1,6 +1,7 @@
 export const IMAGES = {
     Google_Logo : '/google-logo.png',
     Auth_bg : '/auth-bg.png',
+    Auth1 : '/auth1.png',
 }
 
 export const ROUTES = {
