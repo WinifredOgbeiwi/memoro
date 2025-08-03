@@ -17,7 +17,7 @@ const LoginPage = () => {
     setUserData((prev) => ({ ...prev, [name]: value }));
   };
 
-    const { theme } = useTheme();
+  const { theme } = useTheme();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,20 +27,17 @@ const LoginPage = () => {
 
   return (
     <section className="flex flex-col justify-center w-full gap-5 h-fit md:h-full text-text-primary">
-    
-            <Link href={ROUTES.home}>
-      <Image
-        src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}
-        alt="Memoro_auth_bg"
-        width={80}
-        height={80}
-        className=""
-        priority={true}
-        /> 
-        </Link>
-      
-      
-      
+      <Link href={ROUTES.home}>
+        <Image
+          src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}
+          alt="Memoro_auth_bg"
+          width={80}
+          height={80}
+          className=""
+          priority={true}
+        />
+      </Link>
+
       <div>
         <h1 className="font-bold text-3xl mb-2.5">Welcome Back</h1>
         <p>Login to access your memoro account</p>
