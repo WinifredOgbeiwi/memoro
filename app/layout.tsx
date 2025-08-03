@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito, Poppins, Quicksand, Playwrite_PL } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./lib/ThemeProvider";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -34,7 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} antialiased`}>{children}</body>
+      <body className={`${nunito.className} antialiased`}>
+        <Providers>
+           {children}
+        </Providers>
+       </body>
     </html>
   );
 }
