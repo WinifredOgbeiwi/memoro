@@ -114,3 +114,9 @@ body {
   background-color: var(--background);
   color: var(--text-primary);
 }
+
+.custom-swiper .swiper-pagination {
+  bottom :0 !important; 
+  position: absolute;      
+  z-index: 1000;             
+}
