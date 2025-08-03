@@ -44,7 +44,7 @@ const RegisterPage = () => {
       </Link>
 
       <div>
-        <h1 className="font-bold text-3xl mb-2.5">Let's Get Started</h1>
+        <h1 className="font-bold text-3xl mb-2.5">Let&apos;s Get Started</h1>
 <p>Join Memoro and make studying less stressful</p>
 </div>
       <button className="border border-primary6 rounded-md text-center w-full p-1 text-lg font-bold flex items-center justify-center gap-4">
