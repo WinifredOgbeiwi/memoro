@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} antialiased`}>
+      <body className={`${quicksand.className} font-medium antialiased h-full xs:h-screen w-full max-w-[1440px] max-h-fit mx-auto`}>
         <Providers>
            {children}
         </Providers>
