@@ -66,7 +66,7 @@ const LoginPage = () => {
       </form>
       <div className="flex  justify-between items-center text-sm gap-4 xs:flex-row flex-col xs:items-start">
         <p className="text-text-secondary">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link
             href={ROUTES.register}
             className="text-primary2 hover:underline hover:scale-105"
