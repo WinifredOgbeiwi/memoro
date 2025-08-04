@@ -20,7 +20,13 @@ const ForgotPasswordPage = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center w-full max-w-md mx-auto gap-5 text-text-primary py-8">
+
+
+    <div className="min-h-screen flex items-center justify-center px-4">
+
+
+    <section className="flex flex-col justify-center items-center w-full max-w-md mx-auto gap-5 text-text-primary flex-1">
+      
       <Link href={ROUTES.home}>
         <Image
           src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}
@@ -32,7 +38,8 @@ const ForgotPasswordPage = () => {
       </Link>
       {sentEmail ? (
         <div className="flex flex-col items-center justify-center gap-4 w-full text-center">
-          <Image src={IMAGES.email} alt="Email Sent" width={200} height={200} />
+         <Image src={IMAGES.email} alt="Email Sent" width={150} height={150} className="max-w-[80%] h-auto" />
+
           <h1 className="font-bold text-3xl mb-2.5">Check Your Email</h1>
           <p>
             A password reset link has been sent to your email address.
@@ -84,6 +91,7 @@ const ForgotPasswordPage = () => {
         </>
       )}
     </section>
+    </div>
   );
 };
 
