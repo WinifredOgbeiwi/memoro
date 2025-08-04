@@ -14,8 +14,9 @@ export default function AuthLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="min-h-screen w-full flex flex-col md:flex-row overflow-hidden">
-      <div className="md:flex-1 w-full md:w-1/2 bg-background flex flex-col justify-center px-6">
+<main className="min-h-screen w-full flex flex-col md:flex-row overflow-x-hidden overflow-y-auto relative">
+
+      <div className=" w-full md:w-1/2 bg-background flex flex-col justify-center px-6">
          {/* <ThemeToggleButton /> */}
         {children}
       </div>
@@ -29,7 +30,8 @@ export default function AuthLayout({
           priority
         />
      
-        <div className="relative p-5 w-full h-full flex items-center justify-center">
+       <div className="relative p-5 w-full h-full flex items-center justify-center overflow-hidden">
+
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -41,7 +43,7 @@ export default function AuthLayout({
               clickable: true,
             }}
             modules={[Autoplay, Pagination]}
-            className="mySwiper custom-swiper w-full h-full"
+             className="mySwiper custom-swiper w-full h-full max-h-screen"
           >
             {AuthSwiperData.map((slide) => (
               <SwiperSlide

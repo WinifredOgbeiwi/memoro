@@ -21,11 +21,8 @@ const ForgotPasswordPage = () => {
 
   return (
 
+    <section className="flex flex-col w-full max-w-md mx-auto gap-5 text-text-primary justify-center max-h-screen px-4 py-8 overflow-y-auto">
 
-    <div className="min-h-screen flex items-center justify-center px-4">
-
-
-    <section className="flex flex-col justify-center items-center w-full max-w-md mx-auto gap-5 text-text-primary flex-1">
       
       <Link href={ROUTES.home}>
         <Image
@@ -91,7 +88,7 @@ const ForgotPasswordPage = () => {
         </>
       )}
     </section>
-    </div>
+ 
   );
 };
 
