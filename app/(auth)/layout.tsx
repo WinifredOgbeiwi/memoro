@@ -17,7 +17,7 @@ export default function AuthLayout({
   return (
     <main className="min-h-screen w-full flex flex-col md:flex-row">
       <div className="flex-1 w-full md:w-1/2 bg-background flex flex-col justify-center px-6 py-5">
-         <ThemeToggleButton />
+         {/* <ThemeToggleButton /> */}
         {children}
       </div>
       <div className="hidden md:flex relative flex-col flex-1 w-full md:w-1/2 bg-[#3e2687] overflow-y-auto">
