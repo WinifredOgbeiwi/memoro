@@ -1,6 +1,7 @@
 export const IMAGES = {
     Google_Logo : '/google-logo.png',
     Auth_bg : '/auth-bg.png',
+    email : '/email.png',
     Auth1 : '/memoro_auth1.png',
       Auth2 : '/memoro_auth2.png',
         Auth3 : '/memoro_auth3.png',
