@@ -7,7 +7,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination } from "swiper/modules";
-import ThemeToggleButton from "../components/ThemeToggleButton";
 
 export default function AuthLayout({
   children,
