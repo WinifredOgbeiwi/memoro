@@ -12,7 +12,7 @@ import VerificationCodeInput from "@/app/components/VerificationCode";
 const RegisterPage = () => {
   const [role, setRole] = useState("");
   const [country, setCountry] = useState("");
-  const [sentVerificationCode, setSentVerificationCode] = useState(true);
+  const [sentVerificationCode, setSentVerificationCode] = useState(false);
   const [userData, setUserData] = useState({
     email: "",
     password: "",
@@ -33,26 +33,29 @@ const RegisterPage = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center px-5 w-full gap-5 text-text-primary">
+    <section className="flex flex-col w-full max-w-md mx-auto gap-5 text-text-primary py-8 ">
       <Link href={ROUTES.home}>
         <Image
           src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}
           alt="Memoro_auth_bg"
           width={80}
           height={80}
-          className=""
           priority={true}
         />
       </Link>
       {sentVerificationCode ? (
-         <>
-         <h1 className="font-bold text-4xl ">Verification Code</h1>
-         <p>Enter the 6-digit code sent to ********gmail.com</p>
-       <VerificationCodeInput />
-       <p className="">Did&apos;nt get the code? <span className="text-primary2 hover:underline hover:scale-105">Resend</span></p>
-
-       <Button text="Verify" type="submit" />
-       </>
+        <>
+          <h1 className="font-bold text-4xl">Verification Code</h1>
+          <p>Enter the 6-digit code sent to ********gmail.com</p>
+          <VerificationCodeInput />
+          <p>
+            Didn&apos;t get the code?{" "}
+            <span className="text-primary2 hover:underline hover:scale-105">
+              Resend
+            </span>
+          </p>
+          <Button text="Verify" type="submit" />
+        </>
       ) : (
         <>
           <div>
@@ -70,20 +73,14 @@ const RegisterPage = () => {
             />
             <span>Register with Google</span>
           </button>
-
-          <div className="flex items-center gap-4">
-            <div className="w-full h-[0.5px] bg-grey5"></div>
-            <p className="flex w-full justify-center text-center text-sm items-center text-text-secondary ">
+          <div className="flex items-center gap-4 w-full">
+            <div className="flex-1 h-[0.5px] bg-grey5"></div>
+            <p className="text-center text-sm text-text-secondary">
               or with email
             </p>
-            <div className="w-full h-[0.5px] bg-grey5"></div>
+            <div className="flex-1 h-[0.5px] bg-grey5"></div>
           </div>
-
-          <form
-            action=""
-            className="flex flex-col gap-4"
-            onSubmit={handleSubmit}
-          >
+          <form className="flex flex-col gap-4 w-full" onSubmit={handleSubmit}>
             <Input
               label="Username"
               name="username"
@@ -92,14 +89,13 @@ const RegisterPage = () => {
               value={userData.username}
               onChange={handleChange}
             />
-
             <div className="flex flex-col md:flex-row gap-4 w-full">
               <div className="flex flex-col relative w-full md:w-1/2">
                 <label htmlFor="role">Role</label>
                 <select
                   id="role"
                   name="role"
-                  className="border py-2 px-2  w-full rounded-md focus:outline-none focus:border-primary2 focus:bg-primary8 border-primary6"
+                  className="border py-2 px-2 w-full rounded-md focus:outline-none focus:border-primary2 focus:bg-primary8 border-primary6"
                   value={role}
                   style={{
                     color: role === "" ? "gray" : "#000",
@@ -126,7 +122,7 @@ const RegisterPage = () => {
                 <select
                   id="country"
                   name="country"
-                  className="border py-2 px-2  w-full rounded-md focus:outline-none focus:border-primary2 focus:bg-primary8 border-primary6"
+                  className="border py-2 px-2 w-full rounded-md focus:outline-none focus:border-primary2 focus:bg-primary8 border-primary6"
                   value={country}
                   style={{
                     color: country === "" ? "gray" : "#000",
@@ -186,9 +182,9 @@ const RegisterPage = () => {
             </div>
             <Button type="submit" text="Register" />
           </form>
-          <div className="text-sm  ">
+          <div className="text-sm w-full">
             <p className="text-text-secondary">
-              Already have an account? {""}
+              Already have an account?{" "}
               <Link
                 href={ROUTES.login}
                 className="text-primary2 hover:underline hover:scale-105"

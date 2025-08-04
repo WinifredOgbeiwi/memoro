@@ -26,19 +26,18 @@ const LoginPage = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center w-full gap-5 h-fit md:h-full text-text-primary">
+    <section className="flex flex-col justify-center items-center w-full max-w-md mx-auto gap-5 text-text-primary py-8">
       <Link href={ROUTES.home}>
         <Image
           src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}
           alt="Memoro_auth_bg"
           width={80}
           height={80}
-          className=""
           priority={true}
         />
       </Link>
 
-      <div>
+      <div className="w-full text-center">
         <h1 className="font-bold text-3xl mb-2.5">Welcome Back</h1>
         <p>Login to access your memoro account</p>
       </div>
@@ -53,15 +52,13 @@ const LoginPage = () => {
         <span>Login with Google</span>
       </button>
 
-      <div className="flex items-center gap-4">
-        <div className="w-full h-[0.5px] bg-grey5"></div>
-        <p className="flex w-full justify-center text-center text-sm items-center text-text-secondary ">
-          or with email
-        </p>
-        <div className="w-full h-[0.5px] bg-grey5"></div>
+      <div className="flex items-center gap-4 w-full">
+        <div className="flex-1 h-[0.5px] bg-grey5"></div>
+        <p className="text-center text-sm text-text-secondary">or with email</p>
+        <div className="flex-1 h-[0.5px] bg-grey5"></div>
       </div>
 
-      <form action="" className="flex flex-col gap-4" onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-4 w-full" onSubmit={handleSubmit}>
         <Input
           label="Email or Username"
           name="identifier"
@@ -76,10 +73,10 @@ const LoginPage = () => {
           value={userData.password}
           onChange={handleChange}
         />
-
         <Button style="mt-2" type="submit" text="Login" />
       </form>
-      <div className="flex  justify-between items-center text-sm gap-4 xs:flex-row flex-col xs:items-start">
+
+      <div className="flex justify-between items-center text-sm gap-4 w-full xs:flex-row flex-col xs:items-start">
         <p className="text-text-secondary">
           Don&apos;t have an account?{" "}
           <Link
