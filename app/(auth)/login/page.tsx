@@ -26,7 +26,7 @@ const LoginPage = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center w-full  px-5 md:px-16 gap-5 h-fit md:h-full text-text-primary">
+    <section className="flex flex-col justify-center w-full gap-5 h-fit md:h-full text-text-primary">
       <Link href={ROUTES.home}>
         <Image
           src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}

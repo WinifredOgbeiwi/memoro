@@ -16,7 +16,7 @@ export default function AuthLayout({
 }>) {
   return (
  <main className="min-h-screen w-full flex flex-col md:flex-row">
-      <div className="min-h-screen w-full md:w-1/2 py-5 xs:pt-0 bg-background flex flex-col justify-center ">
+      <div className="min-h-screen w-full md:w-1/2 py-5 xs:pt-0 bg-background flex flex-col justify-center px-6">
         {children}
       </div>
 

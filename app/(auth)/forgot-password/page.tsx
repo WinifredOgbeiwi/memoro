@@ -23,7 +23,7 @@ const [sentEmail , setSentEmail] = useState(false);
   };
 
   return (
-    <section className="flex flex-col justify-center w-full  px-5 md:px-16 gap-5 h-full">
+    <section className="flex flex-col justify-center w-full gap-5 h-full">
       
       <Link href={ROUTES.home}>
         <Image
@@ -46,7 +46,7 @@ const [sentEmail , setSentEmail] = useState(false);
         />
       <h1 className="font-bold text-3xl mb-2.5">Check Your Email</h1>
       <p>A password reset link has been sent to your email address.</p>
-Didn't get the email?
+Didn&apos;t get the email?
 Check your spam or junk folder and ensure you entered the correct email.
     </div>
   ) : (

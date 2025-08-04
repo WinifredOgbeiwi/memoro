@@ -33,23 +33,23 @@ const RegisterPage = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center px-5 w-full gap-5 text-text-primary relative">
+    <section className="flex flex-col justify-center px-5 w-full gap-5 text-text-primary">
       <Link href={ROUTES.home}>
         <Image
           src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}
           alt="Memoro_auth_bg"
           width={80}
           height={80}
-          className="relative -top-28"
+          className=""
           priority={true}
         />
       </Link>
       {sentVerificationCode ? (
          <>
-         <h1 className="font-bold text-3xl">Verification Code</h1>
+         <h1 className="font-bold text-4xl ">Verification Code</h1>
          <p>Enter the 6-digit code sent to ********gmail.com</p>
        <VerificationCodeInput />
-       <p className="">Did'nt get the code? <span className="text-primary2 hover:underline hover:scale-105">Resend</span></p>
+       <p className="">Did&apos;nt get the code? <span className="text-primary2 hover:underline hover:scale-105">Resend</span></p>
 
        <Button text="Verify" type="submit" />
        </>
