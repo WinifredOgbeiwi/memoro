@@ -26,7 +26,7 @@ const LoginPage = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center w-full max-w-md mx-auto gap-5 text-text-primary flex-1">
+    <section className="flex flex-col w-full max-w-md mx-auto gap-5 text-text-primary justify-center flex-1">
       <Link href={ROUTES.home}>
         <Image
           src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}
@@ -37,7 +37,7 @@ const LoginPage = () => {
         />
       </Link>
 
-      <div className="w-full text-center">
+      <div className="w-full">
         <h1 className="font-bold text-3xl mb-2.5">Welcome Back</h1>
         <p>Login to access your memoro account</p>
       </div>
