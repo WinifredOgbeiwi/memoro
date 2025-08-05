@@ -25,7 +25,7 @@ html[data-theme="light"] {
   --primary6: #a393da;
   --primary7: #c3b7ea;
   --primary8: #e2dbf7;
-  --primary9: #f3edffb3;
+  --primary9: #efe8ff;
 
   --grey1: #2f2b3a;
   --grey2: #6d6481;
@@ -35,7 +35,7 @@ html[data-theme="light"] {
   --grey6: #f2ebffb3;
   --grey7: #f5f0ffb2;
   --grey8: #d4bcf866;
-  --grey9: #f8f3ffb2;
+  --grey9: #f8f3ff;
 }
 
 html[data-theme="dark"] {

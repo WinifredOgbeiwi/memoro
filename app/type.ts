@@ -13,3 +13,8 @@ export type ButtonProps = {
     type?: "button" | "submit" | "reset";
     text: string;
 }
+
+export type SidebarProps = {
+  handleSidebar: () => void; 
+    openSidebar: boolean;
+};

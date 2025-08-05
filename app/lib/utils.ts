@@ -22,7 +22,7 @@ export const ROUTES = {
   upload: "/upload",
   profile: "/profile",
   history: "/history",
-  leaderboard: " /leaderboard",
+  leaderboard: "/leaderboard",
 
   feedback: "/feedback",
 };
