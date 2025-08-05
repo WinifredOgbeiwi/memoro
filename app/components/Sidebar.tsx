@@ -37,12 +37,12 @@ const Sidebar = ({ openSidebar }: SidebarProps) => {
             } py-3 pl-2  w-full items-center gap-2 group`}
           >
             <Icon
-              className={`group-hover:text-primary4 w-5 ${
+              className={`group-hover:text-primary w-5 group-hover:scale-105 ${
                 pathname === route ? " text-text-primary" : "text-white "
               } `}
             />
             <p
-              className={` text-xs font-semibold group-hover:text-primary4 ${
+              className={` text-xs font-semibold group-hover:text-primary group-hover:scale-105 ${
                 pathname === route ? " text-text-primary" : "text-white "
               } ${openSidebar ? "block" : "hidden"}`}
             >
@@ -52,16 +52,16 @@ const Sidebar = ({ openSidebar }: SidebarProps) => {
         ))}
       </div>
 
-      <div className="flex flex-col gap-2 text-white text-xs  ">
-        <Link href={ROUTES.feedback} className="flex items-center gap-2">
-          <MessageCircle className="text-white w-5" />
-          <p className={` font-semibold ${openSidebar ? "block" : "hidden"}`}>
+      <div className="flex flex-col gap-2 text-white text-xs">
+        <Link href={ROUTES.feedback} className="flex group items-center gap-2">
+          <MessageCircle className="text-white w-5 group-hover:text-primary group-hover:scale-105" />
+          <p className={`group-hover:text-primary group-hover:scale-105 font-semibold ${openSidebar ? "block" : "hidden"}`}>
             Feedback
           </p>
         </Link>
-        <div className="flex items-center gap-2 cursor-pointer">
-          <LogOut className="text-white w-5" />
-          <p className={`font-semibold ${openSidebar ? "block" : "hidden"}`}>
+        <div className="flex items-center gap-2 cursor-pointer group">
+          <LogOut className="text-white w-5 group-hover:text-primary group-hover:scale-105" />
+          <p className={`font-semibold group-hover:text-primary group-hover:scale-105 ${openSidebar ? "block" : "hidden"}`}>
             Logout
           </p>
         </div>

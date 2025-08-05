@@ -1,3 +1,4 @@
+import ThemeToggleButton from "@/app/components/ThemeToggleButton";
 import React from "react";
 
 const DashboardPage = () => {
@@ -6,7 +7,7 @@ const DashboardPage = () => {
   <div className="flex justify-between items-center w-full">
     <h2 className="font-semibold ">Welcome Winifred,</h2>
     <div>
-      <p>Ife</p>
+      <ThemeToggleButton/>
     </div>
   </div>
 </div>

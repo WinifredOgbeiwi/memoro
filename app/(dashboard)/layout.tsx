@@ -48,7 +48,7 @@ export default function DashboardLayout({
           }`}
         >
           <PanelTopClose
-            className={`text-white w-5  `}
+            className={`text-white w-5 cursor-pointer hover:text-primary hover:scale-105`}
             onClick={handleSidebar}
           />
         </div>
