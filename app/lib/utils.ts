@@ -2,13 +2,14 @@ import { History, LayoutDashboard, Trophy, Upload, UserPen } from "lucide-react"
 
 export const IMAGES = {
   Google_Logo: "/google-logo.png",
-  Auth_bg: "/auth-bg.png",
+  Blob_bg: "/blob-bg.PNG",
   email: "/email.png",
   Auth1: "/memoro_auth1.png",
   Auth2: "/memoro_auth2.png",
   Auth3: "/memoro_auth3.png",
   Logo: "/memoro_logo.png",
   Logo_White: "/memoro_logo_white.png",
+  MotivationImage:"/memoro_dasboard1.png"
 };
 
 export const ROUTES = {

@@ -14,24 +14,21 @@ export default function AuthLayout({
   children: React.ReactNode;
 }>) {
   return (
-<main className="min-h-screen w-full flex flex-col md:flex-row overflow-x-hidden overflow-y-auto relative">
-
+    <main className="min-h-screen w-full flex flex-col md:flex-row overflow-x-hidden overflow-y-auto relative">
       <div className=" w-full md:w-1/2 bg-background flex flex-col justify-center px-6">
-         {/* <ThemeToggleButton /> */}
+        {/* <ThemeToggleButton /> */}
         {children}
       </div>
       <div className="hidden md:flex relative flex-col flex-1 w-full md:w-1/2 bg-[#3e2687] overflow-y-auto">
-
         <Image
-          src={IMAGES.Auth_bg}
+          src={IMAGES.Blob_bg}
           alt="Memoro_auth_bg"
           fill={true}
           className="absolute object-cover"
           priority
         />
-     
-       <div className="relative p-5 w-full h-full flex items-center justify-center overflow-hidden">
 
+        <div className="relative p-5 w-full h-full flex items-center justify-center overflow-hidden">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -43,7 +40,7 @@ export default function AuthLayout({
               clickable: true,
             }}
             modules={[Autoplay, Pagination]}
-             className="mySwiper custom-swiper w-full h-full max-h-screen"
+            className="mySwiper custom-swiper w-full h-full max-h-screen"
           >
             {AuthSwiperData.map((slide) => (
               <SwiperSlide

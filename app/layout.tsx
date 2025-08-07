@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${quicksand.className} font-medium antialiased min-h-screen w-full max-w-[1440px] max-h-fit mx-auto
-      overflow-x-hidden bg-background text-text-primary`}>
+      overflow-x-hidden bg-background text-text-primary `}>
         <Providers>
            {children}
         </Providers>
