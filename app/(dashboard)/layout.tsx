@@ -38,7 +38,7 @@ export default function DashboardLayout({
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="overflow-y-auto flex-1 bg-primary9 pr-4 w-full"
+        className="overflow-y-auto overflow-x-hidden flex-1 bg-primary9 pr-4 w-full"
       >
         <div className="flex justify-between items-start  w-full relative">
           <motion.div

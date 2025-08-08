@@ -18,3 +18,10 @@ export type SidebarProps = {
   handleSidebar: () => void; 
     openSidebar: boolean;
 };
+
+export type FolderCardProps = {
+  title: string;
+  description?: string;
+  onClick?: () => void;
+  icon?: React.ReactNode;
+}

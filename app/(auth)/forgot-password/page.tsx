@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Button from "@/app/components/Button";
+import Button from "@/app/components/ui/Button";
 import { Input } from "@/app/components/Input";
 import { IMAGES, ROUTES } from "@/app/lib/utils";
 import { useTheme } from "next-themes";
@@ -20,10 +20,7 @@ const ForgotPasswordPage = () => {
   };
 
   return (
-
     <section className="flex flex-col w-full max-w-md mx-auto gap-5 text-text-primary justify-center max-h-screen px-4 py-8 overflow-y-auto">
-
-      
       <Link href={ROUTES.home}>
         <Image
           src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}
@@ -35,7 +32,13 @@ const ForgotPasswordPage = () => {
       </Link>
       {sentEmail ? (
         <div className="flex flex-col items-center justify-center gap-4 w-full text-center">
-         <Image src={IMAGES.email} alt="Email Sent" width={150} height={150} className="max-w-[80%] h-auto" />
+          <Image
+            src={IMAGES.email}
+            alt="Email Sent"
+            width={150}
+            height={150}
+            className="max-w-[80%] h-auto"
+          />
 
           <h1 className="font-bold text-3xl mb-2.5">Check Your Email</h1>
           <p>
@@ -88,7 +91,6 @@ const ForgotPasswordPage = () => {
         </>
       )}
     </section>
- 
   );
 };
 

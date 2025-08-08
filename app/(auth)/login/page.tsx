@@ -1,5 +1,5 @@
 "use client";
-import Button from "@/app/components/Button";
+import Button from "@/app/components/ui/Button";
 import { Input } from "@/app/components/Input";
 import { IMAGES, ROUTES } from "@/app/lib/utils";
 import { useTheme } from "next-themes";
@@ -27,7 +27,6 @@ const LoginPage = () => {
 
   return (
     <section className="flex flex-col w-full max-w-md mx-auto gap-5 text-text-primary justify-center max-h-screen px-4 py-8">
-
       <Link href={ROUTES.home}>
         <Image
           src={theme === "dark" ? IMAGES.Logo_White : IMAGES.Logo}

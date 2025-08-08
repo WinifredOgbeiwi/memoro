@@ -1,3 +1,65 @@
+export const createQuizzes = [
+  {
+    title:'JavaScript Quiz',
+    description: 'Test your knowledge of JavaScript fundamentals.'
+  },
+  {
+    title: 'React Quiz',
+    description: 'Assess your understanding of React concepts and hooks.'
+  },
+  {
+    title: 'CSS Quiz',
+    description: 'Challenge your skills in CSS styling and layout techniques.'
+  },
+  {
+    title: 'HTML Quiz',
+    description: 'Evaluate your knowledge of HTML elements and structure.'
+  },
+  {
+    title: 'Node.js Quiz',
+    description: 'Test your understanding of Node.js and server-side JavaScript.'
+  },
+]
+
+
+
+export const QuizHistory = [
+  {
+    name: "Math Quiz 1",
+    score: 85,
+    date: "2025-08-01",
+    status: "Complete",
+    type: "Exam",
+  },
+  {
+    name: "History Lesson",
+    score: 32,
+    date: "2025-07-28",
+    status: "Incomplete",
+    type: "Learning",
+  },
+  {
+    name: "Science Quiz",
+    score: 92,
+    date: "2025-07-25",
+    status: "Complete",
+    type: "Exam",
+  },
+  {
+    name: "English Practice",
+    score: 60,
+    date: "2025-07-20",
+    status: "Incomplete",
+    type: "Learning",
+  },
+  {
+    name: "English Practice",
+    score: 49,
+    date: "2025-07-20",
+    status: "Incomplete",
+    type: "Learning",
+  },
+];
 
 export const countries = [
   { code: "AF", name: "Afghanistan" },

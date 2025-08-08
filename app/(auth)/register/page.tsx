@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Button from "@/app/components/Button";
+import Button from "@/app/components/ui/Button";
 import { Input } from "@/app/components/Input";
 import { countries } from "@/app/lib/data";
 import { IMAGES, ROUTES } from "@/app/lib/utils";
