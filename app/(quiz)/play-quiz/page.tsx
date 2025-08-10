@@ -130,7 +130,7 @@ const PlayQuizPage = () => {
           <h2 className="text-2xl font-bold mb-4">Quiz Completed!</h2>
           <p className="mb-6">Your Score: {score} / {quiz.questions.length}</p>
           {quiz.type === "exam" && timeLeft <= 0 && (
-            <p className="text-red-500 font-semibold">Time's up! Quiz ended automatically.</p>
+            <p className="text-red-500 font-semibold">Time&apos;s up! Quiz ended automatically.</p>
           )}
           <button
             onClick={() => router.push("/dashboard")}

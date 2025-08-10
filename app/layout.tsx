@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito, Poppins, Quicksand, Playwrite_PL } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./lib/ThemeProvider";
+import { ToastContainer } from "react-toastify";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body className={`${quicksand.className} font-medium antialiased min-h-screen w-full max-w-[1440px] max-h-fit mx-auto
       overflow-x-hidden bg-background text-text-primary `}>
         <Providers>
+          <ToastContainer position="top-right" autoClose={3000} />
            {children}
         </Providers>
 

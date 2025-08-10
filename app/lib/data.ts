@@ -41,7 +41,7 @@ export const createQuizzes = [
 
   export const quiz = {
     title: "JavaScript Fundamentals",
-    type: "exam",
+    type: "learning",
     totalTime: 60, 
     instructions: [
       "You will have 3 questions to answer.",
