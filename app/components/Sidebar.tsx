@@ -8,12 +8,17 @@ import { useTheme } from "next-themes";
 import { usePathname } from "next/navigation";
 import { SidebarProps } from "../type";
 
-const Sidebar = ({ openSidebar }: SidebarProps) => {
+const Sidebar = ({ openSidebar, handleSidebar }: SidebarProps) => {
   const { theme } = useTheme();
   const pathname = usePathname();
   return (
     <div className={`p-3 pr-0 flex flex-col h-full`}>
-      <div className="flex items-center justify-between pr-3 ">
+      <div className="pl-2 mb-6 sm:hidden">
+           <PanelTopClose className="text-white cursor-pointer hover:text-primary hover:scale-105"
+           onClick={handleSidebar}/>
+      </div>
+   
+      <div className="flex items-center justify-between pr-3  ">
         <Link href={ROUTES.dashboard}>
           <Image
             src={theme === "dark" ? IMAGES.Logo : IMAGES.Logo_White}

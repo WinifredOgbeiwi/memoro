@@ -65,20 +65,6 @@ const DashboardPage = () => {
         <div className="w-1/3 bg-amber-600">j</div>
       </div>
 
-    
-
-      {/* <div className=" ">
-        <div className="w-2/3">
-          <Card>1</Card>
-          <Card>2</Card>
-          <Card>3</Card>
-        </div>
-        <div className="w-1/3">
-          <Card>
-            <div className="w-full h-60">6</div>
-          </Card>
-        </div>
-      </div> */}
     </div>
   );
 };
