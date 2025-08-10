@@ -1,28 +1,60 @@
 export const createQuizzes = [
   {
-    title:'JavaScript Quiz',
-    description: 'Test your knowledge of JavaScript fundamentals.'
+    id: 1,
+    title: "JavaScript Quiz",
+    description: "Test your knowledge of JavaScript fundamentals.",
+    type: "Exam",
+    timesPlayed:5,
   },
   {
-    title: 'React Quiz',
-    description: 'Assess your understanding of React concepts and hooks.'
+    id: 2,
+    title: "React Quiz",
+    description: "Assess your understanding of React concepts and hooks.",
+    type: "Exam",
+    timesPlayed:4,
   },
   {
-    title: 'CSS Quiz',
-    description: 'Challenge your skills in CSS styling and layout techniques.'
+    id: 3,
+    title: "CSS Quiz",
+    description: "Challenge your skills in CSS styling and layout techniques.",
+    type: "Learning",
+    timesPlayed:1,
   },
   {
-    title: 'HTML Quiz',
-    description: 'Evaluate your knowledge of HTML elements and structure.'
+    id: 4,
+    title: "HTML Quiz",
+    description: "Evaluate your knowledge of HTML elements and structure.",
+    type: "Exam",
+    timesPlayed:6,
   },
   {
-    title: 'Node.js Quiz',
-    description: 'Test your understanding of Node.js and server-side JavaScript.'
+    id: 5,
+    title: "Node.js Quiz",
+    description:
+      "Test your understanding of Node.js and server-side JavaScript.",
+    type: "Learning",
+    timesPlayed:10,
   },
-]
+];
 
 
 
+  export const quiz = {
+    title: "JavaScript Fundamentals",
+    type: "exam",
+    totalTime: 60, 
+    instructions: [
+      "You will have 3 questions to answer.",
+      "In exam mode, you have limited time.",
+      "No going back once you answer.",
+      "Your score will be shown at the end."
+    ],
+    questions: [
+      { id: 1, question: "What does 'var' do?", options: ["Declare variable", "Declare function", "Loop"], answer: 0 },
+      { id: 2, question: "Which is a JavaScript framework?", options: ["React", "Laravel", "Django"], answer: 0 },
+      { id: 3, question: "What does '===' check in JS?", options: ["Value only", "Value and Type", "Type only"], answer: 1 }
+    ]
+  };
 export const QuizHistory = [
   {
     name: "Math Quiz 1",
@@ -49,7 +81,7 @@ export const QuizHistory = [
     name: "English Practice",
     score: 60,
     date: "2025-07-20",
-    status: "Incomplete",
+    status: "Complete",
     type: "Learning",
   },
   {
@@ -253,5 +285,5 @@ export const countries = [
   { code: "VN", name: "Vietnam" },
   { code: "YE", name: "Yemen" },
   { code: "ZM", name: "Zambia" },
-  { code: "ZW", name: "Zimbabwe" }
+  { code: "ZW", name: "Zimbabwe" },
 ];

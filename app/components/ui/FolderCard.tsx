@@ -9,14 +9,14 @@ const FolderCard: React.FC<FolderCardProps> = ({
 }) => {
   return (
     <div
-      className="bg-primary2 rounded-tr-lg rounded-b-md shadow-md cursor-pointer transition hover:scale-105 w-48 h-32 flex flex-col"
+      className="bg-primary4 hover:bg-primary3 rounded-tr-lg rounded-b-md shadow-md cursor-pointer transition hover:scale-105 w-40 sm:w-48 h-32 flex flex-col"
       onClick={onClick}
       style={{
         position: "relative",
       }}
     >
       <div
-        className="bg-primary3 w-24 h-6 absolute left-0 -top-[23px]"
+        className="bg-primary3  w-24 h-6 absolute left-0 -top-[23px]"
         style={{
           clipPath: "polygon(0 0, 90% 0, 100% 100%, 0% 100%)",
           borderTopLeftRadius: "0.5rem",
