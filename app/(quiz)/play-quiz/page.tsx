@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { quiz } from "@/app/lib/data";
 
 const PlayQuizPage = () => {
-  const searchParams = useSearchParams();
+
   const router = useRouter();
-  const quizId = searchParams.get("id");
+
 
   const [phase, setPhase] = useState<"instructions" | "quiz" | "result">("instructions");
   const [score, setScore] = useState(0);
